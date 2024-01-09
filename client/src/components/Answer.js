@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 const Answer = ({
     answerText,
     index,
@@ -12,6 +13,7 @@ const Answer = ({
     const correctAnswerClass = isCorrectAnswer ? "correct-answer" : "";
     const wrongAnswerClass = isWrongAnswer ? "wrong-answer" : "";
     const disabledClass = currentAnswer ? "disabled-answer" : "";
+    
     return (
       <div
         className={`answer ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}

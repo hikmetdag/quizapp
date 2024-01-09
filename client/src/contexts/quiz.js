@@ -1,6 +1,4 @@
 import React, { createContext, useReducer, useEffect } from "react";
-//import questions from "../data";
-//import { shuffleAnswers } from "../helpers";
 import useFetch from "../hooks/fetchHook";
 
 const initialState = {
@@ -32,9 +30,13 @@ const reducer = (state, action) => {
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
+    
+      // Update answers based on the next question's possible answers
       const answers = showResults
         ? []
-        : state.questions[currentQuestionIndex].incorrectAnswers;
+        : state.questions[currentQuestionIndex].answers; // Use .answers instead of .incorrectAnswers
+        console.log("Next Question Index:", currentQuestionIndex);
+        console.log("Next Question Answers:", answers);
       return {
         ...state,
         currentAnswer: "",
@@ -43,6 +45,41 @@ const reducer = (state, action) => {
         answers,
       };
     }
+    
+    
+    case "UPDATE_QUESTIONS": {
+      const questionsWithAnswers = action.payload.map((questionData) => ({
+        ...questionData,
+        answers: questionData.incorrectAnswers,
+      }));
+    
+      return {
+        ...state,
+        questions: questionsWithAnswers,
+        showResults: false,
+      };
+    }
+    // case "UPDATE_QUESTIONS": {
+    //   const questionsWithAnswers = action.payload.map((questionData) => {
+    //     const updatedQuestion = {
+    //       ...questionData,
+    //       answers: questionData.incorrectAnswers,
+    //     };
+    
+    //     //console.log("Updated Question:", updatedQuestion);
+    
+    //     return updatedQuestion;
+    //   });
+    
+    //   //console.log("Questions with Answers:", questionsWithAnswers);
+    
+    //   return {
+    //     ...state,
+    //     questions: questionsWithAnswers,
+    //   };
+    // }
+    
+    
     case "RESTART": {
       return initialState;
     }
@@ -54,29 +91,27 @@ const reducer = (state, action) => {
 export const QuizContext = createContext();
 
 export const QuizProvider = ({ children }) => {
-  const value = useReducer(reducer, initialState);
-  const [data, error] = useFetch("http://localhost:8080/api/questions");
-  console.log(data);
+  //const value = useReducer(reducer, initialState);
+  const [data] = useFetch("http://localhost:8080/api/questions");
+ 
+  
 
-  const questionsData = Array.isArray(data?.questions) ? data.questions : [];
-
-  // Check if there's an error while fetching questions
+  const [state, dispatch] = useReducer(reducer, initialState);
   useEffect(() => {
-    if (error) {
-      console.error("Error fetching questions:", error);
+    if (data) {
+      console.log("Fetched Data:", data);
+      const initialState = {
+        questions: data,
+        currentQuestionIndex: 0,
+        currentAnswer: "",
+        answers: [],
+        showResults: false,
+        correctAnswersCount: 0,
+      };
+      // Update state when data changes
+      dispatch({ type: "UPDATE_QUESTIONS", payload: data });
     }
-    console.log("responseData:", data);
-    console.log("questionsData:", questionsData);
-  }, [error, data, questionsData]);
+  }, [data,dispatch]);
 
-  const firstQuestion = questionsData?.[0]; // Access the first question if available
-  const initialAnswers = firstQuestion?.incorrectAnswers || [];
-
-  const [state, dispatch] = useReducer(reducer, {
-    ...initialState,
-    questions: questionsData || [], // Use fetched questions or default to an empty array
-    answers: initialAnswers,
-  });
-
-  return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>;
+  return <QuizContext.Provider value={[state, dispatch]}>{children}</QuizContext.Provider>;
 };

@@ -1,14 +1,20 @@
 import Questions from "../models/questionSchema.js";
 
-/** get all questions */
-export async function getQuestions(req, res){
-    try {
-        const q = await Questions.find();
-        res.json(q)
-    } catch (error) {
-        res.json({ error })
-    }
+
+export async function getQuestions(req, res) {
+  try {
+    const randomQuestions = await Questions.aggregate([
+      { $sample: { size: 10 } }, // Adjust the size as needed
+    ]).exec();
+
+    res.json(randomQuestions);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 }
+
+
 
 /** insert all questinos */
 // export async function insertQuestions(req, res){

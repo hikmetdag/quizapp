@@ -32,7 +32,8 @@ const Quiz = () => {
             {quizState.questions.length}
           </div>
           <Question />
-          {quizState.currentAnswer && (
+          {console.log("Current State:", quizState)}
+          {!quizState.currentAnswer && (
             <div
               onClick={() => dispatch({ type: "NEXT_QUESTION" })}
               className="next-button"
