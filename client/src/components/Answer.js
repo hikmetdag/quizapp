@@ -17,7 +17,10 @@ const Answer = ({
     return (
       <div
         className={`answer ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
-        onClick={() => onSelectAnswer(answerText)}
+        onClick={() => {
+        console.log("Selected Answer:", answerText);
+        onSelectAnswer(answerText);
+      }}
       >
         <div className="answer-letter">{letterMapping[index]}</div>
         <div className="answer-text">{answerText}</div>

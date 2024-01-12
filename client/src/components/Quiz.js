@@ -4,7 +4,7 @@ import { QuizContext } from "../contexts/quiz";
 
 const Quiz = () => {
   const [quizState, dispatch] = useContext(QuizContext);
-
+  console.log("Current Answer:", quizState.currentAnswer);
   return (
     <div className="quiz">
       {quizState.showResults && (
@@ -32,7 +32,7 @@ const Quiz = () => {
             {quizState.questions.length}
           </div>
           <Question />
-          {console.log("Current State:", quizState)}
+          {console.log("kontrol:", !quizState.currentAnswe)}
           {!quizState.currentAnswer && (
             <div
               onClick={() => dispatch({ type: "NEXT_QUESTION" })}

@@ -30,13 +30,11 @@ const reducer = (state, action) => {
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
-    
+
       // Update answers based on the next question's possible answers
       const answers = showResults
         ? []
-        : state.questions[currentQuestionIndex].answers; // Use .answers instead of .incorrectAnswers
-        console.log("Next Question Index:", currentQuestionIndex);
-        console.log("Next Question Answers:", answers);
+        : state.questions[currentQuestionIndex].incorrectAnswers;
       return {
         ...state,
         currentAnswer: "",
@@ -45,41 +43,20 @@ const reducer = (state, action) => {
         answers,
       };
     }
-    
-    
+
     case "UPDATE_QUESTIONS": {
       const questionsWithAnswers = action.payload.map((questionData) => ({
         ...questionData,
         answers: questionData.incorrectAnswers,
       }));
-    
+
       return {
         ...state,
         questions: questionsWithAnswers,
         showResults: false,
       };
     }
-    // case "UPDATE_QUESTIONS": {
-    //   const questionsWithAnswers = action.payload.map((questionData) => {
-    //     const updatedQuestion = {
-    //       ...questionData,
-    //       answers: questionData.incorrectAnswers,
-    //     };
-    
-    //     //console.log("Updated Question:", updatedQuestion);
-    
-    //     return updatedQuestion;
-    //   });
-    
-    //   //console.log("Questions with Answers:", questionsWithAnswers);
-    
-    //   return {
-    //     ...state,
-    //     questions: questionsWithAnswers,
-    //   };
-    // }
-    
-    
+
     case "RESTART": {
       return initialState;
     }
@@ -93,25 +70,18 @@ export const QuizContext = createContext();
 export const QuizProvider = ({ children }) => {
   //const value = useReducer(reducer, initialState);
   const [data] = useFetch("http://localhost:8080/api/questions");
- 
-  
-
   const [state, dispatch] = useReducer(reducer, initialState);
+
   useEffect(() => {
     if (data) {
-      console.log("Fetched Data:", data);
-      const initialState = {
-        questions: data,
-        currentQuestionIndex: 0,
-        currentAnswer: "",
-        answers: [],
-        showResults: false,
-        correctAnswersCount: 0,
-      };
       // Update state when data changes
       dispatch({ type: "UPDATE_QUESTIONS", payload: data });
     }
-  }, [data,dispatch]);
+  }, [data, dispatch]);
 
-  return <QuizContext.Provider value={[state, dispatch]}>{children}</QuizContext.Provider>;
+  return (
+    <QuizContext.Provider value={[state, dispatch]}>
+      {children}
+    </QuizContext.Provider>
+  );
 };

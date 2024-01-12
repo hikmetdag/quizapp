@@ -1,4 +1,4 @@
-// Question.jsx
+// In de Question-component
 import Answer from "./Answer";
 import { useContext } from "react";
 import { QuizContext } from "../contexts/quiz";
@@ -6,13 +6,9 @@ import { QuizContext } from "../contexts/quiz";
 const Question = () => {
   const [quizState, dispatch] = useContext(QuizContext);
   const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
-
-  if (currentQuestion && currentQuestion.incorrectAnswers) {
-    const options = [
-      ...currentQuestion.incorrectAnswers,
-      currentQuestion.correctAnswer,
-    ];
-
+ 
+  if (currentQuestion && currentQuestion.options) {
+    const options = [...currentQuestion.options];
     return (
       <div>
         <div className="question">{currentQuestion.question}</div>

@@ -1,18 +1,29 @@
 import Questions from "../models/questionSchema.js";
 
-
 export async function getQuestions(req, res) {
   try {
     const randomQuestions = await Questions.aggregate([
-      { $sample: { size: 10 } }, // Adjust the size as needed
+      { $sample: { size: 10 } },
     ]).exec();
 
-    res.json(randomQuestions);
+    // Schud de opties van elke vraag
+    const questionsWithShuffledOptions = randomQuestions.map(question => {
+      const shuffledOptions = shuffleArray([...question.incorrectAnswers, question.correctAnswer]);
+      return { ...question, options: shuffledOptions };
+    });
+
+    res.json(questionsWithShuffledOptions);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 }
+
+// Hulpprogrammafunctie om een array willekeurig te schudden
+function shuffleArray(array) {
+  return array.sort(() => Math.random() - 0.5);
+}
+
 
 
 
