@@ -4,43 +4,42 @@ import { QuizContext } from "../contexts/quiz";
 
 const Quiz = () => {
   const [quizState, dispatch] = useContext(QuizContext);
-  console.log("Current Answer:", quizState.currentAnswer);
+  const showNextQuestionButton =
+    !quizState.showResults && !quizState.currentAnswer;
   return (
     <div className="quiz">
       {quizState.showResults && (
         <div className="results">
-          <div className="congratulations">Congratulations!</div>
+          <div className="congratulations">Sonuç Sayfası</div>
           <div className="results-info">
-            <div>You have completed the quiz.</div>
+            <div>Testi tamamladınız.</div>
             <div>
-              You've got {quizState.correctAnswersCount} of &nbsp;
-              {quizState.questions.length} right.
+            {quizState.questions.length} üzerinden {quizState.correctAnswersCount} kelimeyi &nbsp;
+            doğru bildin.
             </div>
           </div>
           <div
             onClick={() => dispatch({ type: "RESTART" })}
             className="next-button"
           >
-            Restart
+            Tekrar başlat
           </div>
         </div>
       )}
       {!quizState.showResults && (
         <div>
           <div className="score">
-            Question {quizState.currentQuestionIndex + 1}/
+            Soru {quizState.currentQuestionIndex + 1}/
             {quizState.questions.length}
           </div>
           <Question />
-          {console.log("kontrol:", !quizState.currentAnswe)}
-          {!quizState.currentAnswer && (
-            <div
-              onClick={() => dispatch({ type: "NEXT_QUESTION" })}
-              className="next-button"
-            >
-              Next question
-            </div>
-          )}
+
+          <div
+            onClick={() => dispatch({ type: "NEXT_QUESTION" })}
+            className="next-button"
+          >
+            Sonraki soru
+          </div>
         </div>
       )}
     </div>

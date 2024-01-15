@@ -30,11 +30,12 @@ const reducer = (state, action) => {
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
-
+    
       // Update answers based on the next question's possible answers
       const answers = showResults
         ? []
-        : state.questions[currentQuestionIndex].incorrectAnswers;
+        : state.questions[currentQuestionIndex].answers
+    
       return {
         ...state,
         currentAnswer: "",
@@ -44,21 +45,30 @@ const reducer = (state, action) => {
       };
     }
 
+    
     case "UPDATE_QUESTIONS": {
       const questionsWithAnswers = action.payload.map((questionData) => ({
         ...questionData,
-        answers: questionData.incorrectAnswers,
+        answers: [...questionData.incorrectAnswers, questionData.correctAnswer],
       }));
-
+    
       return {
         ...state,
         questions: questionsWithAnswers,
         showResults: false,
       };
     }
+    
 
     case "RESTART": {
-      return initialState;
+      return {
+        ...state,
+        currentQuestionIndex: 0,
+        currentAnswer: "",
+        answers: [],
+        showResults: false,
+        correctAnswersCount: 0,
+      };
     }
     default:
       return state;
