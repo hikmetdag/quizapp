@@ -2,7 +2,10 @@ import Questions from "../models/questionSchema.js";
 
 export async function getQuestions(req, res) {
   try {
+    const { category } = req.query;
+console.log("backend", category);
     const randomQuestions = await Questions.aggregate([
+      { $match: { category } },
       { $sample: { size: 10 } },
     ]).exec();
 
@@ -51,6 +54,7 @@ export async function addQuestions(req, res){
 
         // Extract relevant properties from the array of questions
         const questionsToInsert = questionsArray.map(questionData => ({
+            category:questionData.category,
             question: questionData.question,
             incorrectAnswers: questionData.incorrectAnswers,
             correctAnswer: questionData.correctAnswer,

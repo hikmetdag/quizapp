@@ -1,11 +1,13 @@
 import { useContext } from "react";
+import React, { useEffect } from "react";
 import Question from "./Question";
 import { QuizContext } from "../contexts/quiz";
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Quiz = () => {
-  const [quizState, dispatch] = useContext(QuizContext);
-  const showNextQuestionButton =
-    !quizState.showResults && !quizState.currentAnswer;
+  const [quizState, dispatch] = useContext(QuizContext)
+  const navigate = useNavigate();
   return (
     <div className="quiz">
       {quizState.showResults && (
@@ -19,8 +21,12 @@ const Quiz = () => {
             </div>
           </div>
           <div
-            onClick={() => dispatch({ type: "RESTART" })}
+             onClick={() => {
+              dispatch({ type: "RESTART" });
+              navigate("/");
+            }}
             className="next-button"
+           
           >
             Tekrar başlat
           </div>

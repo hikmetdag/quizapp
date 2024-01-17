@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useEffect } from "react";
+import React, { createContext, useReducer, useEffect,useState } from "react";
 import useFetch from "../hooks/fetchHook";
 
 const initialState = {
@@ -30,12 +30,12 @@ const reducer = (state, action) => {
       const currentQuestionIndex = showResults
         ? state.currentQuestionIndex
         : state.currentQuestionIndex + 1;
-    
+
       // Update answers based on the next question's possible answers
       const answers = showResults
         ? []
-        : state.questions[currentQuestionIndex].answers
-    
+        : state.questions[currentQuestionIndex].answers;
+
       return {
         ...state,
         currentAnswer: "",
@@ -45,20 +45,19 @@ const reducer = (state, action) => {
       };
     }
 
-    
     case "UPDATE_QUESTIONS": {
+      console.log("Received payload in UPDATE_QUESTIONS:", action.payload)
       const questionsWithAnswers = action.payload.map((questionData) => ({
         ...questionData,
         answers: [...questionData.incorrectAnswers, questionData.correctAnswer],
       }));
-    
+
       return {
         ...state,
         questions: questionsWithAnswers,
         showResults: false,
       };
     }
-    
 
     case "RESTART": {
       return {
@@ -78,19 +77,28 @@ const reducer = (state, action) => {
 export const QuizContext = createContext();
 
 export const QuizProvider = ({ children }) => {
-  //const value = useReducer(reducer, initialState);
-  const [data] = useFetch("http://localhost:8080/api/questions");
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [data, error, loading] = useFetch(
+    selectedCategory ? `http://localhost:8080/api/questions?category=${selectedCategory}` : null
+  );
+
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    if (data) {
-      // Update state when data changes
+    console.log("Fetched Data:", data);
+
+    if (error) {
+      console.error("Error fetching questions:", error);
+    }
+
+    if ( data) {
+      console.log("Dispatching data to reducer:", data);
       dispatch({ type: "UPDATE_QUESTIONS", payload: data });
     }
-  }, [data, dispatch]);
+  }, [data, loading, error, dispatch,selectedCategory]);
 
   return (
-    <QuizContext.Provider value={[state, dispatch]}>
+    <QuizContext.Provider value={[state, dispatch,selectedCategory, setSelectedCategory]}>
       {children}
     </QuizContext.Provider>
   );

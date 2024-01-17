@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 const Answer = ({
   answerText,
   index,
