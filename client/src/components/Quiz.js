@@ -2,11 +2,11 @@ import { useContext } from "react";
 import React, { useEffect } from "react";
 import Question from "./Question";
 import { QuizContext } from "../contexts/quiz";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const Quiz = () => {
-  const [quizState, dispatch] = useContext(QuizContext)
+  const [quizState, dispatch] = useContext(QuizContext);
   const navigate = useNavigate();
   return (
     <div className="quiz">
@@ -16,17 +16,16 @@ const Quiz = () => {
           <div className="results-info">
             <div>Testi tamamladınız.</div>
             <div>
-            {quizState.questions.length} üzerinden {quizState.correctAnswersCount} kelimeyi &nbsp;
-            doğru bildin.
+              {quizState.questions.length} üzerinden{" "}
+              {quizState.correctAnswersCount} kelimeyi &nbsp; doğru bildin.
             </div>
           </div>
           <div
-             onClick={() => {
+            onClick={() => {
               dispatch({ type: "RESTART" });
               navigate("/");
             }}
             className="next-button"
-           
           >
             Tekrar başlat
           </div>

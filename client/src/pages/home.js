@@ -7,6 +7,7 @@ const Home = () => {
   const [quizState, dispatch, selectedCategory, setSelectedCategory] =
     useContext(QuizContext);
   const startQuiz = (category) => {
+    dispatch({ type: "RESTART" });
     setSelectedCategory(category); // Kategoriyi seç
     navigate("/quiz"); // state bilgisini burada set etmeye gerek yok
   };

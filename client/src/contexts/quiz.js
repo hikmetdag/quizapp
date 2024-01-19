@@ -60,14 +60,20 @@ const reducer = (state, action) => {
     }
 
     case "RESTART": {
-      return {
+      localStorage.clear()
+      const newState = {
         ...state,
         currentQuestionIndex: 0,
         currentAnswer: "",
         answers: [],
         showResults: false,
         correctAnswersCount: 0,
+        questions:[]
       };
+    
+      console.log("New State:", newState);
+      
+      return newState;
     }
     default:
       return state;
@@ -79,10 +85,24 @@ export const QuizContext = createContext();
 export const QuizProvider = ({ children }) => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [data, error, loading] = useFetch(
-    selectedCategory ? `http://localhost:8080/api/questions?category=${selectedCategory}` : null
+    selectedCategory
+      ? `http://localhost:8080/api/questions?category=${selectedCategory}`
+      : null
   );
-
   const [state, dispatch] = useReducer(reducer, initialState);
+  
+  useEffect(() => {
+    // Check if there's data in localStorage
+    const storedData = localStorage.getItem("quizQuestions");
+
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      dispatch({ type: "UPDATE_QUESTIONS", payload: parsedData});
+    } else {
+      dispatch({ type: "RESTART" }); 
+      localStorage.clear();
+    }
+  }, [dispatch]);
 
   useEffect(() => {
     console.log("Fetched Data:", data);
@@ -91,14 +111,17 @@ export const QuizProvider = ({ children }) => {
       console.error("Error fetching questions:", error);
     }
 
-    if ( data) {
+    if (data) {
       console.log("Dispatching data to reducer:", data);
       dispatch({ type: "UPDATE_QUESTIONS", payload: data });
+      localStorage.setItem("quizQuestions", JSON.stringify(data));
     }
-  }, [data, loading, error, dispatch,selectedCategory]);
+  }, [data, loading, error, dispatch, selectedCategory]);
 
   return (
-    <QuizContext.Provider value={[state, dispatch,selectedCategory, setSelectedCategory]}>
+    <QuizContext.Provider
+      value={[state, dispatch, selectedCategory, setSelectedCategory]}
+    >
       {children}
     </QuizContext.Provider>
   );
