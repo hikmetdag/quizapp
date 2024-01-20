@@ -60,21 +60,23 @@ const reducer = (state, action) => {
     }
 
     case "RESTART": {
-      localStorage.clear()
-      const newState = {
+      // localStorage'daki soruları kontrol et
+      const storedQuestions = localStorage.getItem("quizQuestions");
+      if (storedQuestions) {
+        localStorage.clear();
+      }
+    
+      // Şu anda kullanılan durumu sıfırla
+      return {
         ...state,
         currentQuestionIndex: 0,
         currentAnswer: "",
         answers: [],
         showResults: false,
         correctAnswersCount: 0,
-        questions:[]
       };
-    
-      console.log("New State:", newState);
-      
-      return newState;
     }
+    
     default:
       return state;
   }
@@ -94,15 +96,18 @@ export const QuizProvider = ({ children }) => {
   useEffect(() => {
     // Check if there's data in localStorage
     const storedData = localStorage.getItem("quizQuestions");
-
+  
     if (storedData) {
       const parsedData = JSON.parse(storedData);
-      dispatch({ type: "UPDATE_QUESTIONS", payload: parsedData});
-    } else {
-      dispatch({ type: "RESTART" }); 
+      dispatch({ type: "UPDATE_QUESTIONS", payload: parsedData });
+    } else if (selectedCategory) {
+      // Eğer localStorage'da sorular yoksa ve bir kategori seçilmişse yeni soruları yükle
+      dispatch({ type: "RESTART" });
       localStorage.clear();
     }
-  }, [dispatch]);
+  }, [dispatch, selectedCategory]);
+  
+  
 
   useEffect(() => {
     console.log("Fetched Data:", data);

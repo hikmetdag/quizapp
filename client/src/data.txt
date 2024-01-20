@@ -1,0 +1,757 @@
+ [
+  {
+    "category":"A2", "question": "'draaien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["dinlemek", "bakmak", "koşmak"],
+    "correctAnswer": "döndürmek"
+  },
+  {
+    "category":"A2", "question": "('zich) haasten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gecikmek", "beklemek", "koşmak"],
+    "correctAnswer": "acele etmek"
+  },
+  {
+    "category":"A2", "question": "'aanraken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["çalmak", "kaçmak", "sormak"],
+    "correctAnswer": "dokunmak"
+  },
+  {
+    "category":"A2", "question": "'aanvaarden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["reddetmek", "göz ardı etmek", "talep etmek"],
+    "correctAnswer": "kabul etmek"
+  },
+  {
+    "category":"A2", "question": "'abonneren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["izlemek", "takip etmek", "bağlamak"],
+    "correctAnswer": "abone olmak"
+  },
+  {
+    "category":"A2", "question": "'adapteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["reddetmek", "değiştirmek", "dönüştürmek"],
+    "correctAnswer": "uyum sağlamak"
+  },
+  {
+    "category":"A2", "question": "'afdrukken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["silmek", "kopyalamak", "kesmek"],
+    "correctAnswer": "bastırmak"
+  },
+  {
+    "category":"A2", "question": "'annuleren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kabul etmek", "onaylamak", "devam etmek"],
+    "correctAnswer": "iptal etmek"
+  },
+  {
+    "category":"A2", "question": "'antwoorden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["soru sormak", "konuşmak", "duymak"],
+    "correctAnswer": "cevap vermek"
+  },
+  {
+    "category":"A2", "question": "'arresteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kaçmak", "saklanmak", "kaçınmak"],
+    "correctAnswer": "gözaltına almak"
+  },
+  {
+    "category":"A2", "question": "'bakken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["yemek", "temizlemek", "koklamak"],
+    "correctAnswer": "kızartmak"
+  },
+  {
+    "category":"A2", "question": "'bedanken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["beklemek", "sormak", "alay etmek"],
+    "correctAnswer": "teşekkür etmek"
+  },
+  {
+    "category":"A2", "question": "'bedoelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["anlamak", "sormak", "düşünmek"],
+    "correctAnswer": "kastetmek"
+  },
+  {
+    "category":"A2", "question": "'bedroeven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["mutlu etmek", "güldürmek", "sevindirmek"],
+    "correctAnswer": "üzgün etmek"
+  },
+  {
+    "category":"A2", "question": "'beloven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["reddetmek", "göz ardı etmek", "talep etmek"],
+    "correctAnswer": "söz vermek"
+  },
+  {
+    "category":"A2", "question": "'benijden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["anlamak", "sormak", "kıskanmak"],
+    "correctAnswer": "kıskanmak"
+  },
+  {
+    "category":"A2", "question": "'berichten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gözlemlemek", "araştırmak", "keşfetmek"],
+    "correctAnswer": "bildirmek"
+  },
+  {
+    "category":"A2", "question": "'beslissen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["seçmek", "düşünmek", "değerlendirmek"],
+    "correctAnswer": "karar vermek"
+  },
+  {
+    "category":"A2", "question": "'bestellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["göndermek", "almak", "talep etmek"],
+    "correctAnswer": "sipariş vermek"
+  },
+  {
+    "category":"A2", "question": "'betalen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["ödünç almak", "tahsil etmek", "vermek"],
+    "correctAnswer": "ödemek"
+  },
+  {
+    "category":"A2", "question": "'bevredigen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bozmak", "kaçmak", "çiğnemek"],
+    "correctAnswer": "tatmin etmek"
+  },
+  {
+    "category":"A2", "question": "'bloeien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["solmak", "büyümek", "kırılmak"],
+    "correctAnswer": "çiçek açmak"
+  },
+  {
+    "category":"A2", "question": "'boeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["konuşmak", "gezmek", "gülümsemek"],
+    "correctAnswer": "çiftçilik yapmak"
+  },
+  {
+    "category":"A2", "question": "'borgen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["satin almak", "kaçmak", "satmak"],
+    "correctAnswer": "garanti etmek"
+  },
+  {
+    "category":"A2", "question": "'borstelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["boyamak", "temizlemek", "yıkamak"],
+    "correctAnswer": "fırçalamak"
+  },
+  {
+    "category":"A2", "question": "'bouwen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["yıkmak", "temizlemek", "vurmak"],
+    "correctAnswer": "inşa etmek"
+  },
+  {
+    "category":"A2", "question": "'bukken zich' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koşmak", "sormak", "oturmak"],
+    "correctAnswer": "eğilmek"
+  },
+  {
+    "category":"A2", "question": "'completeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["karıştırmak", "eksik brakmak", "devam etmek"],
+    "correctAnswer": "tamamlamak"
+  },
+  {
+    "category":"A2", "question": "'dansen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koşmak", "atlamak", "gulmek"],
+    "correctAnswer": "dans etmek"
+  },
+  {
+    "category":"A2", "question": "'detineren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["saklamak", "kaçmak", "saldırmak"],
+    "correctAnswer": "tutuklamak"
+  },
+  {
+    "category":"A2", "question": "'disputeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["anlaşmak", "kavga etmek", "saldırmak"],
+    "correctAnswer": "tartışmak"
+  },
+  {
+    "category":"A2", "question": "'dromen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["unutmak", "uyumak", "küçümsemek"],
+    "correctAnswer": "rüya görmek"
+  },
+  {
+    "category":"A2", "question": "'drukken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["serbest bırakmak", "güç uygulamak", "sarsmak"],
+    "correctAnswer": "bastırmak"
+  },
+  {
+    "category":"A2", "question": "'duren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bitmek", "sabretmek", "güç uygulamak"],
+    "correctAnswer": "sürmek"
+  },
+  {
+    "category":"A2", "question": "'durven te' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["oturmak", "beklemek", "yurumek"],
+    "correctAnswer": "cesaret etmek"
+  },
+  {
+    "category":"A2", "question": "'duwen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["çekmek", "koşmak", "sürüklemek"],
+    "correctAnswer": "itmek"
+  },
+  {
+    "category":"A2", "question": "'dweilen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["parlatmak", "kurulamak", "temizlemek"],
+    "correctAnswer": "süpürmek"
+  },
+  {
+    "category":"A2", "question": "'eindigen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["başlamak", "sürekli olmak", "süpürmek"],
+    "correctAnswer": "bitirmek"
+  },
+  {
+    "category":"A2", "question": "'ergeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["mutlu etmek", "gülümsemek", "hoşlanmak"],
+    "correctAnswer": "sinirlenmek"
+  },
+  {
+    "category":"A2", "question": "'feliciteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["hüzünlenmek", "üzülmek", "kabul etmek"],
+    "correctAnswer": "tebrik etmek"
+  },
+  {
+    "category":"A2", "question": "'ﬁetsen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koşmak", "yürümek", "güç uygulamak"],
+    "correctAnswer": "bisiklet sürmek"
+  },
+  {
+    "category":"A2", "question": "'ﬂoppen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["başarılı olmak", "güç uygulamak", "sarsmak"],
+    "correctAnswer": "başarısız olmak"
+  },
+  {
+    "category":"A2", "question": "'gebeuren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bilmek", "güç uygulamak", "gelişmek"],
+    "correctAnswer": "olmak"
+  },
+  {
+    "category":"A2", "question": "'gebruiken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["unutmak", "atlamak", "göz ardı etmek"],
+    "correctAnswer": "kullanmak"
+  },
+  {
+    "category":"A2", "question": "'gelden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gelmek", "sürmek", "gezmek"],
+    "correctAnswer": "başvurmak"
+  },
+  {
+    "category":"A2", "question": "'geloven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["anlamak", "güvenmek", "ruya gormek"],
+    "correctAnswer": "inanmak"
+  },
+  {
+    "category":"A2", "question": "'glimlachen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["ağlamak", "sinirlenmek", "gülmek"],
+    "correctAnswer": "gülümsemek"
+  },
+  {
+    "category":"A2", "question": "'gooien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koymak", "koymak", "kesmek"],
+    "correctAnswer": "fırlatmak"
+  },
+  {
+    "category":"A2", "question": "'groeien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["düşmek", "azalmak", "sürmek"],
+    "correctAnswer": "büyümek"
+  },
+  {
+    "category":"A2", "question": "'groeten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["hoşça kal", "vermek", "kucakla"],
+    "correctAnswer": "selam vermek"
+  },
+  {
+    "category":"A2", "question": "'hakken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koymak", "atmak", "kesmek"],
+    "correctAnswer": "doğramak"
+  },
+  {
+    "category":"A2", "question": "'halen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bırakmak", "sürmek", "gezmek"],
+    "correctAnswer": "getirmek"
+  },
+  {
+    "category":"A2", "question": "'haten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güvenmek", "sevmek", "saygı göstermek"],
+    "correctAnswer": "nefret etmek"
+  },
+  {
+    "category":"A2", "question": "'herkennen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["unutmak", "görmezden gelmek", "fark etmemek"],
+    "correctAnswer": "tanımak"
+  },
+  {
+    "category":"A2", "question": "'hoeven te' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bağışlamak", "beklemek", "istemek"],
+    "correctAnswer": "gerek kalmamak"
+  },
+  {
+    "category":"A2", "question": "'hopen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güvenmek", "talep etmek", "beklemek"],
+    "correctAnswer": "umut etmek"
+  },
+  {
+    "category":"A2", "question": "'horen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["unutmak", "görmezden gelmek", "duymamak"],
+    "correctAnswer": "duymak"
+  },
+  {
+    "category":"A2", "question": "'huilen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gülmek", "nefret etmek", "kıskanmak"],
+    "correctAnswer": "ağlamak"
+  },
+  {
+    "category":"A2", "question": "'inademen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["nefes almak", "durmak", "gezmek"],
+    "correctAnswer": "derin nefes almak"
+  },
+  {
+    "category":"A2", "question": "'interesseren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["karışmak", "ilgilenmemek", "aldırmamak"],
+    "correctAnswer": "ilgilenmek"
+  },
+  {
+    "category":"A2", "question": "'invullen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["boş bırakmak", "karalamak", "imzalamak"],
+    "correctAnswer": "doldurmak"
+  },
+  {
+    "category":"A2", "question": "'juichen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["üzülmek", "sakinleşmek", "hüzünlenmek"],
+    "correctAnswer": "sevinmek"
+  },
+  {
+    "category":"A2", "question": "'kammen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kazımak", "fırçalamak", "temizlemek"],
+    "correctAnswer": "saç taramak"
+  },
+  {
+    "category":"A2", "question": "'kennen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["anlamak", "tanımak", "duymak"],
+    "correctAnswer": "bilmek"
+  },
+  {
+    "category":"A2", "question": "'klagen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["tebrik etmek", "gülmek", "sevinmek"],
+    "correctAnswer": "şikayet etmek"
+  },
+  {
+    "category":"A2", "question": "'kloppen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sarsmak", "bölmek", "kırmak"],
+    "correctAnswer": "vurmak"
+  },
+  {
+    "category":"A2", "question": "'knippen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kırmak", "bölmek", "koparmak"],
+    "correctAnswer": "kesmek"
+  },
+  {
+    "category":"A2", "question": "'koken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["soğutmak", "yiyecek hazırlamak", "donmak"],
+    "correctAnswer": "pişirmek"
+  },
+  {
+    "category":"A2", "question": "'kosten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["almak", "sürmek", "vermek"],
+    "correctAnswer": "mal olmak"
+  },
+  {
+    "category":"A2", "question": "'kuchen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["konuşmak", "gülmek", "çağırmak"],
+    "correctAnswer": "öksürmek"
+  },
+  {
+    "category":"A2", "question": "'lachen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["ağlamak", "sinirlenmek", "gülümsemek"],
+    "correctAnswer": "gülmek"
+  },
+  {
+    "category":"A2", "question": "'leiden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kurtarmak", "yanıltmak", "sevindirmek"],
+    "correctAnswer": "çekmek"
+  },
+  {
+    "category":"A2", "question": "'lenen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["uzatmak", "kısaltmak", "güçlendirmek"],
+    "correctAnswer": "uzunlamasına uzanmak"
+  },
+  {
+    "category":"A2", "question": "'leren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kısaltmak", "unutmak", "bilmemek"],
+    "correctAnswer": "öğrenmek"
+  },
+  {
+    "category":"A2", "question": "'leven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["ölü", "hasta", "uykulu"],
+    "correctAnswer": "yaşamak"
+  },
+  {
+    "category":"A2", "question": "'luisteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["konuşmak", "duymak", "görmek"],
+    "correctAnswer": "dinlemek"
+  },
+  {
+    "category":"A2", "question": "'maaien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sulamak", "duymak", "temizlemek"],
+    "correctAnswer": "biçmek"
+  },
+  {
+    "category":"A2", "question": "'maken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["duymak", "silmek", "temizlemek"],
+    "correctAnswer": "yapmak"
+  },
+  {
+    "category":"A2", "question": "'markeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["görmek", "tanımak", "fark etmek"],
+    "correctAnswer": "işaretlemek"
+  },
+  {
+    "category":"A2", "question": "'melden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["saklamak", "görmek", "söylemek"],
+    "correctAnswer": "bildirmek"
+  },
+  {
+    "category":"A2", "question": "'niezen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gülmek", "ağlamak", "hıçkırmak"],
+    "correctAnswer": "sneezing"
+  },
+  {
+    "category":"A2", "question": "'noemen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["unutmak", "görmek", "tanımak"],
+    "correctAnswer": "adlandırmak"
+  },
+  {
+    "category":"A2", "question": "'ontdekken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gizlemek", "unutmak", "duymamak"],
+    "correctAnswer": "keşfetmek"
+  },
+  {
+    "category":"A2", "question": "'ontkennen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kabul etmek", "onaylamak", "gizlemek"],
+    "correctAnswer": "inkar etmek"
+  },
+  {
+    "category":"A2", "question": "'ontwikkelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["geri çekmek", "durmak", "onaylamak"],
+    "correctAnswer": "geliştirmek"
+  },
+  {
+    "category":"A2", "question": "'opbellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["geri aramak", "saklamak", "duymak"],
+    "correctAnswer": "aramak"
+  },
+  {
+    "category":"A2", "question": "'openen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kapatmak", "geri çekmek", "unutmak"],
+    "correctAnswer": "açmak"
+  },
+  {
+    "category":"A2", "question": "'participeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["izlemek", "geri çekmek", "engellemek"],
+    "correctAnswer": "katılmak"
+  },
+  {
+    "category":"A2", "question": "'passen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kıyaslama yapmak", "saklamak", "duymak"],
+    "correctAnswer": "uygun olmak"
+  },
+  {
+    "category":"A2", "question": "'passeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["olmak", "durmak", "saklamak"],
+    "correctAnswer": "geçmek"
+  },
+  {
+    "category":"A2", "question": "'planten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sulamak", "biçmek", "temizlemek"],
+    "correctAnswer": "dikmek"
+  },
+  {
+    "category":"A2", "question": "'ploffen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["doğmak", "düşmek", "sarsmak"],
+    "correctAnswer": "patlamak"
+  },
+  {
+    "category":"A2", "question": "'praten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sessiz olmak", "beklemek", "dinlenmek"],
+    "correctAnswer": "konuşmak"
+  },
+  {
+    "category":"A2", "question": "'presenteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["saklamak", "görmemek", "beklemek"],
+    "correctAnswer": "sunmak"
+  },
+  {
+    "category":"A2", "question": "'proberen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["vazgeçmek", "saklamak", "gizlemek"],
+    "correctAnswer": "denemek"
+  },
+  {
+    "category":"A2", "question": "'procederen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gizlemek", "unutmak", "geri çekmek"],
+    "correctAnswer": "devam etmek"
+  },
+  {
+    "category":"A2", "question": "'rebelleren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sakinleşmek", "uyumak", "katılmak"],
+    "correctAnswer": "isyan etmek"
+  },
+  {
+    "category":"A2", "question": "'redden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["terk etmek", "saklamak", "unutmak"],
+    "correctAnswer": "kurtarmak"
+  },
+  {
+    "category":"A2", "question": "'regenen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güneşlenmek", "kararmak", "açmak"],
+    "correctAnswer": "yağmak"
+  },
+  {
+    "category":"A2", "question": "'reinigen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kirlenmek", "bozmak", "yağmak"],
+    "correctAnswer": "temizlemek"
+  },
+  {
+    "category":"A2", "question": "'reizen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["otostop çekmek", "sakinleşmek", "gezmek"],
+    "correctAnswer": "seyahat etmek"
+  },
+  {
+    "category":"A2", "question": "'rekenen op' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["geri saymak", "hesaplamak", "düşünmek"],
+    "correctAnswer": "üzerine hesap yapmak"
+  },
+  {
+    "category":"A2", "question": "'rennen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["yürümek", "saymak", "sürmek"],
+    "correctAnswer": "koşmak"
+  },
+  {
+    "category":"A2", "question": "'roven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["dövmek", "çalmak", "parçalamak"],
+    "correctAnswer": "soymak"
+  },
+  {
+    "category":"A2", "question": "'rusten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gerginleşmek", "sakinleşmek", "çalışmak"],
+    "correctAnswer": "dinlenmek"
+  },
+  {
+    "category":"A2", "question": "'schamen zich' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["utandırmak", "gülmek", "sakinleşmek"],
+    "correctAnswer": "utanmak"
+  },
+  {
+    "category":"A2", "question": "'schoppen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sallamak", "çarpmak", "kesmek"],
+    "correctAnswer": "tekmelemek"
+  },
+  {
+    "category":"A2", "question": "'schrappen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["yazmak", "boyamak", "çizmek"],
+    "correctAnswer": "silmek"
+  },
+  {
+    "category":"A2", "question": "'slenteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koşmak", "sallanmak", "gezmek"],
+    "correctAnswer": "sallanmak"
+  },
+  {
+    "category":"A2", "question": "'slepen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["sürmek", "gezmek", "itmek"],
+    "correctAnswer": "çekmek"
+  },
+  {
+    "category":"A2", "question": "'spelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["alıştırmak", "çalışmak", "gezmek"],
+    "correctAnswer": "oynamak"
+  },
+  {
+    "category":"A2", "question": "'spellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["tekrar etmek", "kendini ifade etmek", "gezmek"],
+    "correctAnswer": "oynamak"
+  },
+  {
+    "category":"A2", "question": "'stallen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["koymak", "sürmek", "gizlemek"],
+    "correctAnswer": "park etmek"
+  },
+  {
+    "category":"A2", "question": "'stoppen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["başlamak", "hızlanmak", "çalışmak"],
+    "correctAnswer": "durmak"
+  },
+  {
+    "category":"A2", "question": "'strooien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["temizlemek", "kullanmak", "gezmek"],
+    "correctAnswer": "serpmek"
+  },
+  {
+    "category":"A2", "question": "'studeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["oyun oynamak", "gezmek", "dinlenmek"],
+    "correctAnswer": "çalışmak"
+  },
+  {
+    "category":"A2", "question": "'sturen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["çalmak", "sürmek", "gezmek"],
+    "correctAnswer": "göndermek"
+  },
+  {
+    "category":"A2", "question": "'tanken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["doldurmak", "boşaltmak", "çıkarmak"],
+    "correctAnswer": "benzin almak"
+  },
+  {
+    "category":"A2", "question": "'tekenen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["boyamak", "gezmek", "kesmek"],
+    "correctAnswer": "çizmek"
+  },
+  {
+    "category":"A2", "question": "'teleurstellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["mutlu etmek", "sevindirmek", "beklemek"],
+    "correctAnswer": "hayal kırıklığına uğratmak"
+  },
+  {
+    "category":"A2", "question": "'tellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["düşmek", "sürmek", "çıkarmak"],
+    "correctAnswer": "saymak"
+  },
+  {
+    "category":"A2", "question": "'terugkeren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["ileri gitmek", "uyumak", "gezmek"],
+    "correctAnswer": "geri dönmek"
+  },
+  {
+    "category":"A2", "question": "'testen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bozmak", "sınamak", "gezmek"],
+    "correctAnswer": "test etmek"
+  },
+  {
+    "category":"A2", "question": "'toevoegen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["çıkarmak", "geri çekmek", "doldurmak"],
+    "correctAnswer": "eklemek"
+  },
+  {
+    "category":"A2", "question": "'tonen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gizlemek", "unutmak", "gezmek"],
+    "correctAnswer": "göstermek"
+  },
+  {
+    "category":"A2", "question": "'twijfelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güvenmek", "inanmak", "karar vermek"],
+    "correctAnswer": "şüphe etmek"
+  },
+  {
+    "category":"A2", "question": "'uitademen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güç uygulamak", "nefes almak", "sakinleşmek"],
+    "correctAnswer": "nefes vermek"
+  },
+  {
+    "category":"A2", "question": "'uitstallen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["göstermek", "gizlemek", "gezmek"],
+    "correctAnswer": "sergilemek"
+  },
+  {
+    "category":"A2", "question": "'veranderen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["aynı kalmak", "düzenlemek", "unutmak"],
+    "correctAnswer": "değiştirmek"
+  },
+  {
+    "category":"A2", "question": "'verbazen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gezmek", "gülmek", "sevinmek"],
+    "correctAnswer": "şaşırtmak"
+  },
+  {
+    "category":"A2", "question": "'verbeteren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bozmak", "kötüleştirmek", "gezmek"],
+    "correctAnswer": "iyileştirmek"
+  },
+  {
+    "category":"A2", "question": "'verbranden' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["parlatmak", "soğutmak", "gezmek"],
+    "correctAnswer": "yanmak"
+  },
+  {
+    "category":"A2", "question": "'verdelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["toplamak", "gezmek", "alıkoymak"],
+    "correctAnswer": "dağıtmak"
+  },
+  {
+    "category":"A2", "question": "'verdienen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["vermek", "beklemek", "sakinleşmek"],
+    "correctAnswer": "kazanmak"
+  },
+  {
+    "category":"A2", "question": "'verdienen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["vermek", "beklemek", "sakinleşmek"],
+    "correctAnswer": "kazanmak"
+  },
+  {
+    "category":"A2", "question": "'vergissen zich' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["hatırlamak", "gezmek", "düşünmek"],
+    "correctAnswer": "unutmak"
+  },
+  {
+    "category":"A2", "question": "'verhuizen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["yerleşmek", "gezmek", "kalabalık olmak"],
+    "correctAnswer": "taşınmak"
+  },
+  {
+    "category":"A2", "question": "'verlangen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["beklemek", "sakinleşmek", "gezmek"],
+    "correctAnswer": "istemek"
+  },
+  {
+    "category":"A2", "question": "'vernietigen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["korumak", "güçlendirmek", "gezmek"],
+    "correctAnswer": "yok etmek"
+  },
+  {
+    "category":"A2", "question": "'vertellen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["göstermek", "gezmek", "unutmak"],
+    "correctAnswer": "söylemek"
+  },
+  {
+    "category":"A2", "question": "'vertrouwen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["korkmak", "kuşkulanmak", "gezmek"],
+    "correctAnswer": "güvenmek"
+  },
+  {
+    "category":"A2", "question": "'verven' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["silmek", "temizlemek", "gezmek"],
+    "correctAnswer": "boyamak"
+  },
+  {
+    "category":"A2", "question": "'verwachten' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gezmek", "sakinleşmek", "umut etmek"],
+    "correctAnswer": "beklemek"
+  },
+  {
+    "category":"A2", "question": "'verwarren' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["açıklamak", "sakinleşmek", "gezmek"],
+    "correctAnswer": "karıştırmak"
+  },
+  {
+    "category":"A2", "question": "'verzaken' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["kabul etmek", "unutmak", "gezmek"],
+    "correctAnswer": "vazgeçmek"
+  },
+  {
+    "category":"A2", "question": "'verzamelen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["saklamak", "düzenlemek", "gezmek"],
+    "correctAnswer": "toplamak"
+  },
+  {
+    "category":"A2", "question": "'voelen zich' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["gezmek", "düşünmek", "kalmak"],
+    "correctAnswer": "hissetmek"
+  },
+  {
+    "category":"A2", "question": "'volgen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["güçlendirmek", "gezmek", "kaçmak"],
+    "correctAnswer": "takip etmek"
+  },
+  {
+    "category":"A2", "question": "'voltooien' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["bozmak", "sonlandırmak", "gezmek"],
+    "correctAnswer": "tamamlamak"
+  },
+  {
+    "category":"A2", "question": "'waarderen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["küçümsemek", "değerini düşürmek", "sevmemek"],
+    "correctAnswer": "değerini bilmek"
+  },
+  {
+    "category":"A2", "question": "'waarschuwen' kelimesinin Türkçe karşılığı nedir?",
+    "incorrectAnswers": ["desteklemek", "güvenmek", "uyarmak"],
+    "correctAnswer": "uyarmak"
+  },
+];
