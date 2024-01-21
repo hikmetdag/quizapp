@@ -1,15 +1,15 @@
- import { useEffect, useState } from "react";
-// useFetch.js
-// ... (diğer import ve kodlar)
+import { useEffect, useState } from "react";
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true); // Yükleme işlemi başladı
+
         const response = await fetch(url);
         const result = await response.json();
 
@@ -25,7 +25,7 @@ const useFetch = (url) => {
         console.error("Error in useFetch:", error);
         setError(error);
       } finally {
-        setLoading(false);
+        setLoading(false); // Yükleme işlemi tamamlandı
       }
     };
 

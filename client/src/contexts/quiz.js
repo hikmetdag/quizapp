@@ -51,7 +51,7 @@ const reducer = (state, action) => {
         ...questionData,
         answers: [...questionData.incorrectAnswers, questionData.correctAnswer],
       }));
-
+      console.log("Updated questions with answers:", questionsWithAnswers);
       return {
         ...state,
         questions: questionsWithAnswers,

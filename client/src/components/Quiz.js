@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 const Quiz = () => {
   const [quizState, dispatch] = useContext(QuizContext);
   const navigate = useNavigate();
+  
   return (
     <div className="quiz">
       {quizState.showResults && (
